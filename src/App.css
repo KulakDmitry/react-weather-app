@@ -1,0 +1,227 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background-image: url("./pictures/main-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  transition: All 0.2s ease-in-out;
+}
+
+.not-found {
+  font-size: 25px;
+  color: white;
+  margin: 2% 40%;
+}
+
+header {
+  padding: 30px 0;
+  color: white;
+}
+
+.search-panel {
+  padding: 30px 0;
+}
+
+.search-panel input,
+button {
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.search-panel input {
+  border-radius: 15px 0 0 15px;
+}
+
+.search-panel button {
+  cursor: pointer;
+  border-radius: 0 15px 15px 0;
+  transition: 0.1s ease-in-out;
+}
+.search-panel button:hover {
+  color: white;
+  background-color: #447fea;
+}
+
+.city {
+  padding: 30px;
+  font-size: 30px;
+  border-bottom: 1px solid white;
+}
+
+.info {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin: 0 30%;
+  padding: 20px;
+  color: white;
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.temp_now {
+  font-size: 80px;
+  padding-top: 30px;
+}
+
+.temp_max {
+  margin-left: 40%;
+  padding-right: 2%;
+}
+
+.temp_min {
+  border-left: 1px solid white;
+  padding-left: 2%;
+}
+
+.visibility {
+  margin-right: 45px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.general_description {
+  padding: 30px;
+  font-size: 30px;
+}
+
+.Clear-icon {
+  background-image: url("./pictures/clear-sun.svg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 35%;
+}
+
+.Clear {
+  background-image: url("./pictures/clear.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.Rain-icon {
+  background-image: url("./pictures/rain.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 35%;
+}
+.Rain {
+  background-image: url("./pictures/rain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.Snow-icon {
+  background-image: url("./pictures/snow.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 35%;
+}
+.Snow {
+  background-image: url("./pictures/snow.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.Thunderstorm-icon {
+  background-image: url("./pictures/storm.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 35%;
+}
+.Thunderstorm {
+  background-image: url("./pictures/storm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.Clouds-icon {
+  background-image: url("./pictures/cloudy-day.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 35%;
+}
+
+.Clouds {
+  background-image: url("./pictures/clouds.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.Mist-icon {
+  background-image: url("./pictures/mist.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 35%;
+}
+
+.Mist {
+  background-image: url("./pictures/mist.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .search-panel input,
+  button {
+    padding: 12px;
+    font-size: 15px;
+  }
+  .search-panel {
+    padding: 20px;
+  }
+  header {
+    padding: 20px 0;
+  }
+  .info {
+    margin: 5px;
+    padding: 10px;
+  }
+  .city {
+    padding: 20px;
+  }
+  .general_description {
+    padding: 15px;
+    font-size: 25px;
+  }
+  .temp_now {
+    font-size: 60px;
+  }
+  .description {
+    padding-bottom: 20px;
+  }
+  .not-found {
+    margin: 10%;
+  }
+  .temperature {
+    padding: 20px 0;
+  }
+}
