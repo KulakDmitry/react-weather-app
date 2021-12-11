@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/KulakDmitry/react-weather-app/static/css/main.f6b9b954.chunk.css",
+    "main.js": "/KulakDmitry/react-weather-app/static/js/main.0d43a682.chunk.js",
+    "main.js.map": "/KulakDmitry/react-weather-app/static/js/main.0d43a682.chunk.js.map",
+    "runtime-main.js": "/KulakDmitry/react-weather-app/static/js/runtime-main.38784276.js",
+    "runtime-main.js.map": "/KulakDmitry/react-weather-app/static/js/runtime-main.38784276.js.map",
+    "static/js/2.fca63e14.chunk.js": "/KulakDmitry/react-weather-app/static/js/2.fca63e14.chunk.js",
+    "static/js/2.fca63e14.chunk.js.map": "/KulakDmitry/react-weather-app/static/js/2.fca63e14.chunk.js.map",
+    "index.html": "/KulakDmitry/react-weather-app/index.html",
+    "static/css/main.f6b9b954.chunk.css.map": "/KulakDmitry/react-weather-app/static/css/main.f6b9b954.chunk.css.map",
+    "static/js/2.fca63e14.chunk.js.LICENSE.txt": "/KulakDmitry/react-weather-app/static/js/2.fca63e14.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/KulakDmitry/react-weather-app/static/media/storm.5c4d4329.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38784276.js",
+    "static/js/2.fca63e14.chunk.js",
+    "static/css/main.f6b9b954.chunk.css",
+    "static/js/main.0d43a682.chunk.js"
+  ]
+}
