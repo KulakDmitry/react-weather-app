@@ -17,7 +17,6 @@ class App extends Component {
   searchingCity = (e) => {
     this.setState({
       value: e.target.value,
-      weather: null,
     });
   };
 
@@ -58,9 +57,7 @@ class App extends Component {
     return (
       <div
         className={
-          weather && weather.name === value && weather.weather[0].main
-            ? `App ${weather.weather[0].main} `
-            : "App"
+          weather && weather.weather ? `App ${weather.weather[0].main} ` : "App"
         }
       >
         <header>
@@ -75,7 +72,7 @@ class App extends Component {
         />
         {weather ? (
           <div className="display">
-            {weather.message ? (
+            {weather.cod === "404" ? (
               <p className="not-found">Not found</p>
             ) : (
               <Info weather={weather} />
