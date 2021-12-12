@@ -11,14 +11,13 @@ class App extends Component {
       value: "",
       weather: null,
       isLoading: false,
-      existMassage: "",
     };
   }
 
   searchingCity = (e) => {
     this.setState({
       value: e.target.value,
-      existMessage: "",
+      weather: null,
     });
   };
 
@@ -27,7 +26,6 @@ class App extends Component {
   key = "33178d46dea4c98a92d98aa6ea4ebc24";
 
   getData = () => {
-    const { weather, value } = this.state;
     fetch(
       `${this.url}weather?q=${this.state.value}&appid=${this.key}&units=metric`
     )
@@ -38,11 +36,6 @@ class App extends Component {
           isLoading: false,
         })
       );
-    if (weather !== value) {
-      this.setState({
-        existMessage: "City Not Found",
-      });
-    }
   };
 
   startSearch = (e) => {
@@ -56,12 +49,12 @@ class App extends Component {
   clearInput = () => {
     this.setState({
       value: "",
-      existMessage: "",
+      weather: null,
     });
   };
 
   render() {
-    const { weather, value, isLoading, existMessage } = this.state;
+    const { weather, value, isLoading } = this.state;
     return (
       <div
         className={
@@ -82,8 +75,8 @@ class App extends Component {
         />
         {weather ? (
           <div className="display">
-            {weather.name !== value ? (
-              <p className="not-found">{existMessage}</p>
+            {weather.message ? (
+              <p className="not-found">Not found</p>
             ) : (
               <Info weather={weather} />
             )}

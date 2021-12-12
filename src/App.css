@@ -188,6 +188,20 @@ button {
   background-position: center;
   height: 100vh;
 }
+.Fog-icon {
+  background-image: url("./pictures/mist.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 35%;
+}
+
+.Fog {
+  background-image: url("./pictures/fog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
 
 @media screen and (max-width: 500px) {
   .search-panel input,
