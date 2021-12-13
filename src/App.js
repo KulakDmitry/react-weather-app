@@ -22,7 +22,7 @@ class App extends Component {
 
   url = "https://api.openweathermap.org/data/2.5/";
 
-  key = "33178d46dea4c98a92d98aa6ea4ebc24";
+  key = process.env.REACT_APP_API_KEY;
 
   getData = () => {
     fetch(
